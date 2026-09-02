@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Fundamentos da Web</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Fundamentos da Web</h1>
+            <p>Páginas estáticas, dinâmicas e como o navegador conversa com o servidor</p>
+        </header>
+
+        <section>
+            <article>
+                <hr>
+                <h2>Página Estática</h2>
+                <p>
+                    É o tipo mais simples de página. O arquivo HTML já tá pronto no servidor e é
+                    entregue ao navegador exatamente do jeito que está, sem nenhum processamento.
+                    O conteúdo não muda entre uma visita e outra.
+                </p>
+                <p><strong>Exemplo real:</strong> Um portfólio pessoal no GitHub Pages — texto, foto e links
+                fixos que só mudam se o dev editar o HTML na mão.</p>
+
+                <hr>
+                <h2>Página Dinâmica</h2>
+                <p>
+                    O conteúdo é gerado na hora, quando chega a requisição.
+                    O servidor roda uma lógica (lê o banco de dados, verifica quem tá logado, etc.)
+                    e só depois monta e devolve o HTML pro navegador.
+                </p>
+                <p><strong>Exemplo real:</strong> O perfil do Instagram — cada usuário vê suas próprias fotos
+                e seguidores porque o servidor consulta o banco de dados e monta o HTML com os dados
+                específicos daquele perfil.</p>
+
+                <hr>
+                <h2>Como funciona o caminho entre navegador, servidor e resposta</h2>
+                <ol>
+                    <li>O usuário digita uma URL no navegador e pressiona Enter.</li>
+                    <li>O navegador envia uma <strong>requisição HTTP</strong> pro servidor.</li>
+                    <li>O servidor recebe a requisição e localiza o recurso pedido.</li>
+                    <li>Se precisar, executa uma lógica no back-end (código, consulta ao banco de dados).</li>
+                    <li>Monta a <strong>resposta HTTP</strong> com o conteúdo (HTML, imagem, JSON, etc.).</li>
+                    <li>O navegador recebe a resposta e <strong>renderiza</strong> a página pra quem pediu.</li>
+                </ol>
+                <hr>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
